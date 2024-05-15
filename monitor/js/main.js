@@ -1,13 +1,16 @@
-alert("1");
 let respuesta = document.getElementById("respuesta");
+let respuestaServidor = "a";
+console.log(respuestaServidor);
 
 function callApiRequest() {
   // Hacer una petición para un usuario con ID especifico
   // .get("https://18.132.200.102/iot-car-control/back-end/apis/getRegistro.php")
   axios
-    alert("2");
+    respuestaServidor = "b";
+    console.log(respuestaServidor);
     .get("https://18.169.105.156/iot-car-control/back-end/apis/getRegistro.php")
-    alert("3);
+    respuestaServidor = "c";
+    console.log(respuestaServidor);
     .then(function (response) {
       // manejar respuesta exitosa
       console.log(response);
@@ -23,13 +26,9 @@ function callApiRequest() {
         default:
           respuestaServidor = "DETENER"; break;
       }
-
-      // let respuestaServidor = response.data == "f"? "ADELANTE"
-      //                       : response.data == "b"? "ATRÁS"
-      //                       : response.data == "l"? "IZQUIERDA"
-      //                       : responde.data == "r"? "DERECHA"
-      //                       : "DETENER";
-      respuesta.innerHTML="Respuesta: <strong>" + respuestaServidor + "</strong>";
+    
+    respuesta.innerHTML="Respuesta: <strong>" + respuestaServidor + "</strong>";
+    
     })
     .catch(function (error) {
       // manejar error
