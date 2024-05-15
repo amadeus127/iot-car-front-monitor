@@ -1,4 +1,3 @@
-alert("HOLA");
 let respuesta = document.getElementById("respuesta");
 
 function callApiRequest() {
@@ -28,6 +27,7 @@ function callApiRequest() {
     .catch(function (error) {
       // manejar error
       console.log(error);
+      console.log("NO");
     })
     .finally(function () {
       // siempre sera executado
