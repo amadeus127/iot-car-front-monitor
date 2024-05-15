@@ -7,8 +7,6 @@ function callApiRequest() {
   // .get("https://18.132.200.102/iot-car-control/back-end/apis/getRegistro.php")
   axios
     .get("https://18.169.105.156/iot-car-control/back-end/apis/getRegistro.php")
-    respuestaServidor = "c";
-    console.log(respuestaServidor);
     .then(function (response) {
       // manejar respuesta exitosa
       console.log(response);
