@@ -1,5 +1,5 @@
+alert("HOLA");
 let respuesta = document.getElementById("respuesta");
-let respuestaServidor = 'a';
 
 function callApiRequest() {
   // Hacer una petición para un usuario con ID especifico
