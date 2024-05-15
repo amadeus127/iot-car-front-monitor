@@ -1,6 +1,5 @@
 let respuesta = document.getElementById("respuesta");
 let respuestaServidor = "a";
-console.log(respuestaServidor);
 
 function callApiRequest() {
   // Hacer una petición para un usuario con ID especifico
